@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildPi - Recommendations</title>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="w3-gray">
+        <!-- Navigation -->
+        <div class="w3-top">
+            <div class="w3-bar w3-purple w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-hover-white" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./index.html">WildPi</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-white" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./about.html">About</a>
+            </div>
+
+            <div id="sideMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a class="w3-bar-item w3-button w3-padding-large" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./about.html">About</a>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("sideMenu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </div>
+
+        <!-- Title Card -->
+        <header class="w3-container w3-center w3-deep-purple" style="padding-top: 128px">
+            <h1 class="w3-margin w3-jumbo">WildPi - Recommendations</h1>
+            <p>Fun and interesting things to do and see!</p>
+        </header>
+
+        <div class="w3-container">
+
+            <div class="w3-content">
+
+                <!-- Code -->
+                <div class="w3-container w3-card w3-dark-gray w3-margin-bottom w3-margin-right w3-margin-left">
+                    <h2 class="w3-padding-16">Programming</h2>
+                    <p>Trying to learn more about programming or need help learning a new technology? Here is where I go when I need help.</p>
+                </div>
+
+                <div class="w3-row">
+                    <!-- Stackoverflow -->
+                    <div class="w3-col s12 m6 l6">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-stack-overflow"></i><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></h2>
+                            <p>This forum has a great community of amateur and professional software developers who help each other with both the simple and complex problems they face in their projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- W3 School -->
+                    <div class="w3-col s12 m6 l6">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><a href="https://www.w3schools.com/" target="_blank">W3 School</a></h2>
+                            <p>The World Wide Web Consortium (W3C) provides W3 School as a free resource to developers to learn web technologies. Much (if not all) of the CCS and styling of this website is powered by their free CSS styling library W3.CSS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="w3-container w3-card w3-dark-gray w3-margin-bottom w3-margin-right w3-margin-left">
+                    <h2 class="w3-padding-16">Thinking + Education</h2>
+                    <p>Looking for some recreational education materials or just want to watch/read something that will make you think? If so, then I'd recommend these ditigal watering holes.</p>
+                </div>
+
+                <div class="w3-row">
+                    <!-- CGP Grey -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-youtube-square"></i><a href="https://www.youtube.com/user/CGPGrey" target="_blank">CGP Grey</a></h2>
+                            <p>While Grey does not post often when he does his videos are always interesting. While I don't always agree with some of his philosophical positions or conclusions, he does a very good job of approaching common problems from a scientific point of view, and I have yet to not learn something from watching one of his videos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Khan Academy -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></h2>
+                            <p>Khan Academy is a good resource for learning how to do math. I have used it for reviewing algebra and wrapping my brain around Integration-By-Parts</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 Blue 1 Brown -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-youtube-square"></i><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/featured" target="_blank">3 Blue 1 Brown</a></h2>
+                            <p>3 Blue 1 Brown is great! His "Essence of Linear Algebra" has done a lot to help me understand a subject that I have always felt was too complicated for me.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movies & YouTube -->
+                <div class="w3-container w3-card w3-dark-gray w3-margin-bottom w3-margin-right w3-margin-left">
+                    <h2 class="w3-padding-16">Relaxation and Recreation</h2>
+                    <p>The Internet is full of useful and thought provoking content, but it is also a place to have fun. Here's where I like to go after a long hard day at work.</p>
+                </div>
+
+                <div class="w3-row">
+                    <!-- HISHE -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-youtube-square"></i><a href="https://www.youtube.com/user/HISHEdotcom" target="_blank">HISHE</a></h2>
+                            <p>This is by far my favorite YouTube channel. How It Should Have Ended (HISHE) does a great job of exploring plot holes and incongrueties in movies and having fun with the characters we enjoy watching in our favorite movies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Men of the West -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-youtube-square"></i><a href="https://www.youtube.com/channel/UCItHdUEqlpfvDlcCeyZwH6w" target="_blank">Men of the West</a></h2>
+                            <p>Have you ever wondered what else happened in J.R.R. Tolkien's world of Middle Earth besides the War of the Ring. I have found good answers here on Men of the West.</p>
+                        </div>
+                    </div>
+
+                    <!-- Studio C -->
+                    <div class="w3-col s12 m6 l4">
+                        <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right fa fa-youtube-square"></i><a href="https://www.youtube.com/watch?v=tqIh3N7_xGk&list=PLGVpxD1HlmJ-P4GmME8hDikbdxMg9giyt" target="_blank">Studio C</a></h2>
+                            <p>Do you like sketch comedy? Are you disappointed when a good sketch is ruined by an inappropriate comment or joke? May I present Studio C. They work to present wholesome comedy for everyone. Their older sketches are my favorite, so I recommend that you start there.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Salutation -->
+        <div class="w3-container w3-black w3-opacity w3-center">
+            <p>
+                <i>"Where no oxen are, the trough is clean;<br/>
+                    But much increase comes by the strength of an ox."
+                </i>
+                <br/>
+                The Bible, Book of Proverbs, Chapter 14, 4th verse
+            </p>
+        </div>
+
+        <!-- References -->
+        <footer class="w3-container w3-center w3-opacity">
+            <p>Powered by <a href="https://www.heroku.com/" target="_blank">heroku</a>, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>, and <a href="http://fontawesome.io/icons/" target="_blank">font awesome</a></p>
+        </footer>
+
+    </body>
+</html>

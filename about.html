@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildPi - About</title>
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="w3-gray">
+        <!-- Navigation -->
+        <div class="w3-top">
+            <div class="w3-bar w3-teal w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-hover-white" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./index.html">WildPi</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-white" href="./about.html">About</a>
+            </div>
+
+            <div id="sideMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a class="w3-bar-item w3-button w3-padding-large" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./about.html">About</a>
+            </div>
+            
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("sideMenu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </div>
+        
+        <!-- Title Card -->
+        <header class="w3-container w3-center w3-indigo" style="padding-top: 128px">
+            <h1 class="w3-margin w3-jumbo">WildPi - About</h1>
+            <p>A little bit about me and why WildPi exists.</p>
+        </header>
+            
+        <!-- Main Container with content -->
+        <div class="w3-container">
+
+            <div class="w3-content w3-margin-top">
+
+                <!-- About Me -->
+                <div class="w3-container w3-card w3-dark-gray w3-margin-bottom">
+                    <h2 class="w3-padding-16">About Me</h2>
+                    <p>Just like everyone else here on Earth, I am unique. I have had many adventures while working, learning, and finding ways to have fun.</p>
+                </div>
+
+                <!-- Left column -->
+                <div class="w3-third">
+
+                    <!-- LinkedIn -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-linkedin-square"></i>Resume</h2>
+                        <p>View my resume on <a href="https://www.linkedin.com/in/alexvanderson" target="_blank">LinkedIn</a></p>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-github"></i>Code Donations</h2>
+                        <p>See what I've done on <a href="https://github.com/alexv-anderson/" target="_blank">GitHub</a></p>
+                    </div>
+
+                    <!-- Having Fun -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                        <h5 class="w3-text-grey">Finding Ways to have Fun</h5>
+                        <p>
+                            I have curated a collection of hobbies and activities that I find enjoyable such as:
+                            <ul>
+                                <li>Programming</li>
+                                <li>Walking/Hiking</li>
+                                <li>Board Games (Risk, Clue, etc.)</li>
+                                <li>Mario Kart Tournaments</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right column -->
+                <div class="w3-twothird">
+
+                    <!-- Work Summary -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                        <h5 class="w3-text-grey">Working</h4>
+                        <p>
+                            I currently work as a full-time software developer. However, I also enjoy teaching, tutoring, and an occasional outdoor/landscaping project. In the past, I have also worked several other types of jobs such as:
+                            <ul>
+                                <li>Undergraduate Teaching Assistant</li>
+                                <li>Camp Counselor</li>
+                                <li>Manufacturing Engineering Intern</li>
+                                <li>Circulation Assistant at a library</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <!-- Learning Summary -->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+                        <h5 class="w3-text-grey">Learning</h5>
+                        <p>I enjoy learning how to use software to simulate different events and systems. As a result, some of my favorite subjects are:
+                            <ul>
+                                <li>Computer Science</li>
+                                <li>Physics</li>
+                                <li>Calculus</li>
+                                <li>Artificial Intelligence</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w3-container">
+            <div class="w3-content">
+                <!-- Learning Summary -->
+                <div class="w3-container w3-card w3-dark-gray w3-margin-bottom w3-margin-top">
+                    <h2>Why is this Pi wild? ... or is it pie?</h2>
+                    <p><b>Wild</b><br/>Over the past few years, I have compiled an assortment of tools, favorite and useful websites, and opinions.</p>
+                    <p><b>Pi</b><br>I have  been told that I have an unusually large interest in math for someone who is not a formally trained mathematician.</p>
+                    <p><b>Wild</b> + <b>Pi</b> = <b>WildPi</b><br/>Therefore, WildPi is a place for the wide and varied array of my scientific and not-so-scientific factoids to live.</p>
+                    <p><i>And yes I do like pie as well</i></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salutation -->
+        <div class="w3-container w3-black w3-opacity w3-center">
+            <p>
+                <i>"I returned and saw under the sun that -<br/>
+                    The race is not to the swift,<br/>
+                    Nor the battle to the strong,<br/>
+                    Nor bread to the wise,<br/>
+                    Nor riches to men of understanding,<br/>
+                    Nor favor to men of skill;<br/>
+                    But time and chance happen to them all."
+                </i>
+                <br/>
+                The Bible, Book of Ecclesiastes, Chapter 9, 11th verse
+            </p>
+        </div>
+
+        <!-- References -->
+        <footer class="w3-container w3-center w3-opacity">
+            <p>Powered by <a href="https://www.heroku.com/" target="_blank">heroku</a>, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>, and <a href="http://fontawesome.io/icons/" target="_blank">font awesome</a></p>
+        </footer>
+
+    </body>
+</html>

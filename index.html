@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildPi</title>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="w3-top">
+            <div class="w3-bar w3-green w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-hover-white" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-white" href="./index.html">WildPi</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./about.html">About</a>
+            </div>
+
+            <div id="sideMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a class="w3-bar-item w3-button w3-padding-large" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./about.html">About</a>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("sideMenu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </div>
+
+        <!-- Title Card -->
+        <header class="w3-container w3-center w3-green" style="padding-top: 128px">
+            <h1 class="w3-margin w3-jumbo">WildPi</h1>
+            <p>Welcome to my corner of the Internet!</p>
+        </header>
+
+        <!-- Code Card -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content w3-text-green">
+                <div class="w3-twothird">
+                    <h2>Code</h2>
+                    <p>I enjoy programming! In addition to working as a full-time software developer, I usually have one or two hobby projects which occupy my time on the weekends. As these projects and tools become mature I will add them to WildPi.</p>
+                </div>
+                <div class="w3-onethird w3-center">
+                    <i class="fa fa-code fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Card -->
+        <div class="w3-row-padding w3-padding-64 w3-container w3-green">
+            <div class="w3-content">
+                <div class="w3-third w3-center">
+                    <i class="fa fa-map-signs fa-5x"></i>
+                </div>
+                <div class="w3-twothird">
+                    <h2>Recommendations</h2>
+                    <p>
+                        The Internet is a big place, even for software developers. It can feel like you're taking small steps into a much larger world.
+                    </p>
+                    <ul>
+                        <li>Ever wonder what software developers do on the Internet?</li>
+                        <li>Where do we go to talk about our code?</li>
+                        <li>Where do get all of our gloriously nerdy and geeky knowlege?</li>
+                    </ul>
+                    <p>
+                        Well, do not worry! WildPi is also a launching point for answering those questions. Here I'll share some of my favorite YouTube channels and websites that I use to answer my questions and stay up to date on the latest events.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Card -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content w3-text-green">
+                <div class="w3-twothird">
+                    <h2>About</h2>
+                    <p>
+                        By now you probably have questions...
+                        <ul>
+                            <li>Just who is the man behind the curtain?</li>
+                            <li>Who dreamt up this wild assortment of delicious topics?</li>
+                            <li>What is so wild about Pi... or pie?</li>
+                            <li>Does he like Pi or pie? <i>(Or perhaps both? If so, does he prefer to have them simultaneously or separately?)</i></li>
+                        </ul>
+                        However, you should not worry, as you can find the answers to these and other questions here in WildPi as well.
+                    </p>
+                </div>
+                <div class="w3-onethird w3-center">
+                    <i class="fa fa-user-secret fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salutation -->
+        <div class="w3-container w3-black w3-opacity w3-center">
+            <p>
+                Thank you for visiting WildPi!<br/>
+                If I don't hear from you, then I hope that you have a great day and come back to visit soon!
+            </p>
+        </div>
+
+        <!-- References -->
+        <footer class="w3-container w3-center w3-opacity">
+            <p>Powered by <a href="https://www.heroku.com/" target="_blank">heroku</a>, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>, and <a href="http://fontawesome.io/icons/" target="_blank">font awesome</a></p>
+        </footer>
+    </body>
+</html>

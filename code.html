@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildPi - Code</title>
+            
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="w3-top">
+            <div class="w3-bar w3-orange w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./index.html">WildPi</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-white" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="./about.html">About</a>
+            </div>
+
+            <div id="sideMenu" class="w3-bar-block w3-hide w3-white w3-hide-large w3-hide-medium w3-large">
+                <a class="w3-bar-item w3-button w3-padding-large" href="./code.html">Code</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./recommendations.html">Recommendations</a>
+                <a class="w3-bar-item w3-button w3-padding-large" href="./about.html">About</a>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("sideMenu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </div>
+
+        <!-- Title Card -->
+        <header class="w3-container w3-center w3-amber" style="padding-top: 128px">
+            <h1 class="w3-margin w3-jumbo">WildPi-Code</h1>
+            <p>Tasty bits of code for all kinds of adventures</p>
+        </header>
+
+        <!-- Clue Solver -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content w3-text-brown">
+                <div class="w3-third w3-center">
+                    <i class="fa fa-user-secret fa-5x"></i>
+                </div>
+                <div class="w3-twothird">
+                    <h2>Clue Detective (Android App)</h2>
+                    <p>
+                        Hasbro's classic board game <a href="https://www.hasbro.com/en-us/product/retro-series-clue-1986-edition-game:34CD3F89-5259-4B6C-BDEC-260957BBCE6C" target="_blank">Clue</a> is a favorite of mine.
+                        So, I decided to make an android app for people who would like help while playing Clue with their friends.
+                        <br/><br/>
+                        Users can enter the cards in their hand or the cards which others show them throughout the game along with what other players are asking each other. Using all of this informaiton Clue Detective will calculate the probabillity of who is holding any of the cards in the game. For instance, the app may predict that there is a 20% chance that each of your 3 opponents is holding a particular card and that there is a 40% chance that the card is actually one of the three hidden cards.
+                        <br/><br/>
+                        <i>The app is currently available on <a href="https://play.google.com/store/apps/details?id=com.wildpi.mobile.android.gpas.clue" target="_blank">Google Play</a>.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JSON -->
+        <div class="w3-row-padding w3-padding-64 w3-container w3-amber">
+            <div class="w3-content w3-text-brown">
+                <div class="w3-twothird">
+                    <h2>JSON</h2>
+                    <p>
+                        This is the first project which I released as part of WildPi-Code. My own JSON library, WildPi-JSON<br/>
+                        The source for this project is hosted on <a href="https://github.com/alexv-anderson/WildPi-JSON" target="_blank">GitHub</a> along with its <a href="https://alexv-anderson.github.io/WildPi-JSON/" target="_blank">documentation</a>.
+                    </p>
+                </div>
+                <div class="w3-one-third w3-center">
+                    <i class="fa fa-clipboard fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dice -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content w3-text-brown">
+                <div class="w3-third w3-center">
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <br />
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <br />
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <br />                    
+                </div>
+                <div class="w3-twothird">
+                    <h2>WildPi-Dice</h2>
+                    <p>
+                        This is a straight-forward implementation of a Java library which is designed to help create games which use dice.<br />
+                        The source for the library is hosted on <a href="https://github.com/alexv-anderson/WildPi-Dice" target="_blank">GitHub</a> along with its <a href="https://alexv-anderson.github.io/WildPi-Dice/" target="_blank">documentation</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salutation -->
+        <div class="w3-container w3-black w3-opacity w3-center">
+            <p>
+                <i>"And I set my heart to seek and search out by wisdom concerning all that is done under heaven;<br/>
+                    this burdensome task God has given to the sons of men that they may be exercised."
+                </i>
+                <br/>
+                The Bible, Book of Ecclesiastes, Chapter 1, 13th verse
+            </p>
+        </div>
+            
+        <!-- References -->
+        <footer class="w3-container w3-center w3-opacity">
+            <p>Powered by <a href="https://www.heroku.com/" target="_blank">heroku</a>, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>, and <a href="http://fontawesome.io/icons/" target="_blank">font awesome</a></p>
+        </footer>
+    </body>
+</html>
